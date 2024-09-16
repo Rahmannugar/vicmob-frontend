@@ -8,8 +8,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-      <div className="bg-orange-800 fixed w-screen p-3 flex justify-between items-center">
+    <nav className="relative z-50">
+      <div className="bg-orange-800 w-screen p-3 flex justify-between items-center">
         <img
           src="https://res.cloudinary.com/thirtythree/image/upload/v1726476802/vicmob-logo_vc17p3.jpg"
           alt="vicmob-logo"
@@ -28,7 +28,7 @@ const Navbar = () => {
             visible
               ? "max-h-screen" // Adjust the max height to control how much of the menu is visible
               : "max-h-0"
-          } absolute left-0 w-screen md:hidden mt-5 bg-white overflow-hidden transition-all duration-500 ease-in-out`}
+          } absolute left-0 w-screen md:hidden bg-white overflow-hidden transition-all duration-500 ease-in-out`}
           style={{ top: "100%" }}
         >
           <ul className="flex flex-col items-center justify-center space-y-6">
