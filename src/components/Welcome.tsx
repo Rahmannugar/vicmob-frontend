@@ -2,7 +2,7 @@ const Welcome = () => {
   return (
     <div>
       <div className="py-5 px-5">
-        <h1 className="text-2xl text-center text-orange-900 ">
+        <h1 className="text-2xl text-center text-orange-900 font-black">
           Welcome Address
         </h1>
         <div className="bg-orange-900 h-1 flex justify-center items-center mt-1"></div>
@@ -14,7 +14,7 @@ const Welcome = () => {
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726672771/governors_foqct3.png"
               alt="governors"
             />
-            <h1 className="text-center text-orange-900 text-xl">
+            <h1 className="text-center text-orange-900 text-xl font-bold">
               Board of Governors
             </h1>
           </div>
@@ -37,7 +37,7 @@ const Welcome = () => {
             <a
               href="/files/student-handbook.pdf"
               download
-              className="text-orange-900"
+              className="text-orange-900 font-black"
             >
               Read more
             </a>
