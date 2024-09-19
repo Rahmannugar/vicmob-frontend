@@ -40,7 +40,7 @@ const Carousel = () => {
         </div>
 
         <img
-          className="h-[500px] hidden md:block object-cover w-screen"
+          className="h-[600px] hidden md:block object-cover w-screen"
           src="https://res.cloudinary.com/thirtythree/image/upload/v1726476546/vicmob-1_cwnkls.jpg"
           alt="Carousel-1"
         />
@@ -62,11 +62,6 @@ const Carousel = () => {
         </div>
 
         <div className="absolute z-10 top-28 left-[3%]">
-          <img
-            src="https://res.cloudinary.com/thirtythree/image/upload/v1726476802/vicmob-logo_vc17p3.jpg"
-            alt="vicmob-logo"
-            className="w-[50px] h-[50px] rounded-full"
-          />
           <h1 className="text-xl bg-white p-3 w-[30vw] min-w-[200px]">
             Vicmob Schools
           </h1>
