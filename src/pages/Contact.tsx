@@ -134,7 +134,7 @@ const Contact = () => {
                 </label>
                 <Datepicker />
               </div>
-              <div className="mb-5 px-5">
+              <div className="mb-5">
                 <label
                   htmlFor="Country"
                   className="block mb-2 text-sm font-medium text-black dark:text-white"
