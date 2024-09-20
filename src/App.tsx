@@ -52,7 +52,7 @@ const App = () => {
             className={` fixed border-black border bg-blue-900 bottom-0 left-0 md:hidden z-50 w-full h-20 py-5`}
           >
             <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-              <a href="/admission" className="px-5">
+              <a href="/admissions" className="px-5">
                 <button
                   type="button"
                   className="inline-flex flex-col items-center justify-center group"
