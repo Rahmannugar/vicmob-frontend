@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Schools = () => {
   return (
     <div>
-      <h1 className="text-center bg-slate-100 font-black text-2xl mt-10 text-black py-6">
+      <h1 className="text-center bg-blue-200 font-black text-2xl mt-10 text-black py-6">
         <SchoolIcon fontSize="large" /> Vicmob Schools
       </h1>
 
@@ -19,7 +19,7 @@ const Schools = () => {
             src="https://res.cloudinary.com/thirtythree/image/upload/v1726713037/primary_s67lxw.jpg"
             alt="primary"
           />
-          <button className="lg:text-xl hover:bg-white hover:text-blue-900 duration-300 absolute top-[45%] md:top-[40%] lg:top-[50%] bg-blue-900 text-white p-2 rounded-md font-bold">
+          <button className="lg:text-xl hover:bg-white hover:text-blue-900 duration-300 absolute top-[45%] md:top-[40%] lg:top-[50%] bg-blue-900 text-white p-2 font-bold">
             Vicmob Nursery and Primary school
           </button>
           <p className="text-justify md:max-w-[300px] px-3 lg:max-w-[450px] md:h-[140px] lg:h-[120px]">
@@ -39,7 +39,7 @@ const Schools = () => {
             src="https://res.cloudinary.com/thirtythree/image/upload/v1726712728/secondary_zhcrqb.jpg"
             alt="secondary"
           />
-          <button className="lg:text-xl hover:bg-white hover:text-blue-900 duration-300 absolute top-[45%] lg:top-[50%] bg-blue-900 text-white p-2 rounded-md font-bold">
+          <button className="lg:text-xl hover:bg-white hover:text-blue-900 duration-300 absolute top-[45%] lg:top-[50%] bg-blue-900 text-white p-2 font-bold">
             Vicmob High school
           </button>
           <p className="text-justify px-3 md:max-w-[300px] lg:max-w-[450px] md:h-[140px] lg:h-[120px]">

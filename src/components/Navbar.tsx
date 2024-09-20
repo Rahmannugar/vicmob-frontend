@@ -32,19 +32,19 @@ const Navbar = () => {
           style={{ top: "100%" }}
         >
           <ul className="flex flex-col font-bold items-center justify-center space-y-3 py-2">
-            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-orange-700 duration-100">
+            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-blue-900 duration-100">
               <a href="/">Home</a>
             </li>
-            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-orange-700 duration-100">
+            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-blue-900 duration-100">
               <a href="/admissions">Admission</a>
             </li>
-            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-orange-700 duration-100">
+            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-blue-900 duration-100">
               <a href="/curriculum">Curriculum</a>
             </li>
-            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-orange-700 duration-100">
+            <li className="border-black border-b w-screen px-3 hover:text-center hover:text-blue-900 duration-100">
               <a href="/contact">Contact form</a>
             </li>
-            <li className=" w-screen px-3 hover:text-center hover:text-orange-700 duration-100">
+            <li className=" w-screen px-3 hover:text-center hover:text-blue-900 duration-100">
               <a href="/about">About us</a>
             </li>
           </ul>
