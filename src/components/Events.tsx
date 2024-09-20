@@ -4,7 +4,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 const Events = () => {
   return (
     <div className="py-10">
-      <div className="bg-red-100 py-12 ">
+      <div className="bg-blue-100 py-12 ">
         <h1 className="text-center text-lg font-bold">News & Events</h1>
 
         {/* Carousel for mobile and smaller screens */}
