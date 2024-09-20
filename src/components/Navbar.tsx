@@ -31,7 +31,7 @@ const Navbar = () => {
           } absolute left-0 w-screen md:hidden z-50 bg-white overflow-hidden transition-all duration-500 ease-in-out`}
           style={{ top: "100%" }}
         >
-          <ul className="flex flex-col font-bold items-center justify-center space-y-3 py-2">
+          <ul className="flex flex-col text-xs font-bold items-center justify-center space-y-3 py-2">
             <li className="border-black border-b w-screen px-3 hover:text-center hover:text-blue-900 duration-100">
               <a href="/">Home</a>
             </li>

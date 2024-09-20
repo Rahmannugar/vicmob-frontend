@@ -62,10 +62,10 @@ const Carousel = () => {
         </div>
 
         <div className="absolute z-10 top-28 left-[3%]">
-          <h1 className="text-xl font-black  bg-white p-3 w-[30vw] min-w-[200px]">
+          <h1 className=" font-black  bg-white p-3 w-[30vw] min-w-[200px]">
             Vicmob Schools
           </h1>
-          <p className="bg-blue-950 font-bold text-white w-[30vw] min-w-[200px] p-3">
+          <p className="bg-blue-950 text-sm font-bold text-white w-[30vw] min-w-[200px] p-3">
             <Typewriter
               options={{
                 strings: [
