@@ -38,12 +38,12 @@ const Contact = () => {
 
       {/* form */}
       <div className="py-12 mx-5">
-        <form className="max-w- mx-auto bg-transparent rounded-lg shadow-xl py-10 px-5">
+        <form className="max-w- mx-auto bg-transparent border border-gray-400 rounded-lg shadow-xl py-10 px-5">
           <h1 className="text-center mb-7 font-bold">Contact Form</h1>
           {/* grid-content */}
           <div className="md:grid-cols-2 md:grid md:gap-4">
             {/* left column */}
-            <div className="md:border md:border-black p-3">
+            <div className="md:border md:border-gray-400 p-3">
               {/* Profile Photo Upload */}
               <div className="flex flex-col space-y-5 items-center mb-5 col-span-2">
                 <div className="shrink-0">
@@ -134,7 +134,7 @@ const Contact = () => {
                 </label>
                 <Datepicker />
               </div>
-              <div className="mb-5">
+              <div className="mb-5 px-5">
                 <label
                   htmlFor="Country"
                   className="block mb-2 text-sm font-medium text-black dark:text-white"
@@ -174,7 +174,7 @@ const Contact = () => {
             </div>
 
             {/* right column */}
-            <div className="md:border md:border-black p-3">
+            <div className="md:border md:border-gray-400 p-3">
               <div className="mb-5">
                 <label
                   htmlFor="Guardian"
