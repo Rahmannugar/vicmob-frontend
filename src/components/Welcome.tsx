@@ -20,7 +20,7 @@ const Welcome = () => {
           </div>
 
           <div className="lg:px-5 mt-3 lg:mt-0 lg:w-1/2 text-justify">
-            <p className="bg-blue-900 text-white py-5 px-5 rounded-xl cursor-pointer hover:opacity-60 shadow-xl duration-300">
+            <p className="bg-blue-900 text-white py-5 px-5 rounded-xl cursor-pointer shadow-xl duration-300">
               <span className="text-2xl font-black">"</span>Dear Students,
               Parents, and Guardians, It is with great pride and excitement that
               we welcome you to VICMOB SCHOOLS. Our institution is more than
