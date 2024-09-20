@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Curriculum from "./pages/Curriculum";
 import Admissions from "./pages/Admissions";
-
+// vicmobschools@gmail.com
 
 const App = () => {
   return (

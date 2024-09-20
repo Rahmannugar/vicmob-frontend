@@ -69,7 +69,17 @@ const Footer = () => {
             </div>
           </div>
           <FooterDivider className="border-white" />
-          <div className="w-full sm:flex sm:items-center sm:justify-between">
+          <div className="flex justify-center space-x-4 mb-3">
+            <h1 className="text-sm">
+              Vicmob Private School |17 Ojo Srteet, Off Oguntade B/Stop Shasha
+              Lagos.
+            </h1>
+            <h1 className="text-sm">
+              Vicmob High School / 23 Elegbede Street, Off Coker Rd, Shasha
+              Lagos.
+            </h1>
+          </div>
+          <div className="w-full sm:flex sm:items-center sm:justify-center">
             <FooterCopyright
               href="#"
               by="Vicmob Schools™"
