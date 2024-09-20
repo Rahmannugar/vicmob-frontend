@@ -2,10 +2,10 @@ const Welcome = () => {
   return (
     <div>
       <div className="py-5 px-5">
-        <h1 className="text-2xl text-center text-blue-900 font-black">
+        <h1 className=" text-center text-blue-900 font-black">
           Welcome Address
         </h1>
-        <div className="bg-blue-900 h-1 flex justify-center items-center mt-1"></div>
+        <div className="bg-blue-900 h-0.5 flex justify-center items-center mt-1"></div>
 
         <div className="lg:flex justify-center items-center">
           <div className="flex flex-col">
@@ -14,13 +14,13 @@ const Welcome = () => {
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726672771/governors_foqct3.png"
               alt="governors"
             />
-            <h1 className="text-center text-blue-900 text-xl font-bold">
+            <h1 className="text-center text-blue-900 font-bold">
               Board of Governors
             </h1>
           </div>
 
           <div className="lg:px-5 mt-3 lg:mt-0 lg:w-1/2 text-justify">
-            <p className="bg-blue-900 text-white py-5 px-5 rounded-xl cursor-pointer shadow-xl duration-300">
+            <p className="bg-blue-900 text-white py-5 px-5 text-xs rounded-xl cursor-pointer shadow-xl duration-300">
               <span className="text-2xl font-black">"</span>Dear Students,
               Parents, and Guardians, It is with great pride and excitement that
               we welcome you to VICMOB SCHOOLS. Our institution is more than

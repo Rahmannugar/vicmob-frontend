@@ -4,8 +4,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Schools = () => {
   return (
     <div>
-      <h1 className="text-center bg-blue-200 font-black text-2xl mt-10 text-black py-6">
-        <SchoolIcon fontSize="large" /> Vicmob Schools
+      <h1 className="text-center bg-blue-200 font-black mt-10 text-black py-5">
+        <SchoolIcon fontSize="medium" /> Vicmob Schools
       </h1>
 
       <div className="md:flex items-center px-5 md:px-0 lg:space-x-20 md:space-x-10 justify-center mt-6 md:mt-10">
@@ -19,15 +19,15 @@ const Schools = () => {
             src="https://res.cloudinary.com/thirtythree/image/upload/v1726713037/primary_s67lxw.jpg"
             alt="primary"
           />
-          <button className="lg:text-xl hover:bg-white hover:text-blue-900 duration-300 absolute top-[45%] md:top-[40%] lg:top-[50%] bg-blue-900 text-white p-2 font-bold">
+          <button className="text-sm hover:bg-white hover:text-blue-900 duration-150 absolute top-[45%] md:top-[40%] lg:top-[50%] bg-blue-900 text-white p-2 font-bold">
             Vicmob Nursery and Primary school
           </button>
-          <p className="text-justify md:max-w-[300px] px-3 lg:max-w-[450px] md:h-[140px] lg:h-[120px]">
+          <p className="text-justify text-xs md:max-w-[300px] px-3 lg:max-w-[450px] md:h-[140px] lg:h-[120px]">
             Welcome to Vicmob Nursery & Primary School, where we provide an
             exceptional educational foundation for children, nurturing their
             growth and development in a caring and engaging environment.
           </p>
-          <button className="bg-blue-900 py-3 px-4 text-white hover:bg-white hover:border-black hover:border-t hover:text-blue-900 duration-300">
+          <button className="bg-blue-900 py-3 px-4 text-white hover:bg-white hover:border-black hover:border-t hover:text-blue-900 duration-150">
             Visit school <ArrowForwardIcon />
           </button>
         </div>
@@ -39,15 +39,15 @@ const Schools = () => {
             src="https://res.cloudinary.com/thirtythree/image/upload/v1726712728/secondary_zhcrqb.jpg"
             alt="secondary"
           />
-          <button className="lg:text-xl hover:bg-white hover:text-blue-900 duration-300 absolute top-[45%] lg:top-[50%] bg-blue-900 text-white p-2 font-bold">
+          <button className="text-sm hover:bg-white hover:text-blue-900 duration-150 absolute top-[45%] lg:top-[50%] bg-blue-900 text-white p-2 font-bold">
             Vicmob High school
           </button>
-          <p className="text-justify px-3 md:max-w-[300px] lg:max-w-[450px] md:h-[140px] lg:h-[120px]">
+          <p className="text-justify text-xs px-3 md:max-w-[300px] lg:max-w-[450px] md:h-[140px] lg:h-[120px]">
             At Vicmob High School, we shape future leaders by offering a
             comprehensive education that prioritizes excellence and fosters a
             strong sense of social accountability.
           </p>
-          <button className="bg-blue-900 py-3 px-4 text-white hover:bg-white hover:border-black hover:border-t hover:text-blue-900 duration-300">
+          <button className="bg-blue-900 py-3 px-4 text-white hover:bg-white hover:border-black hover:border-t text-sm hover:text-blue-900 duration-150">
             Visit school <ArrowForwardIcon />
           </button>
         </div>

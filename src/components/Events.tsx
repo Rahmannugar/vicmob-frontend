@@ -5,7 +5,7 @@ const Events = () => {
   return (
     <div className="py-10">
       <div className="bg-blue-100 py-12 ">
-        <h1 className="text-center text-2xl">News & Events</h1>
+        <h1 className="text-center font-bold">News & Events</h1>
 
         {/* Carousel for mobile and smaller screens */}
         <div className="block h-[900px] lg:hidden mt-[-20px] px-5">
@@ -16,13 +16,13 @@ const Events = () => {
                 src="https://res.cloudinary.com/thirtythree/image/upload/v1726737627/resumption_s5aghc.jpg"
                 alt="School resumption"
               />
-              <h1 className="text-2xl text-black px-5">School resumption</h1>
-              <p className="px-5">
+              <h1 className="font-bold text-black px-5">School resumption</h1>
+              <p className="px-5 text-sm">
                 As we embark on another academic year, we welcome back our
                 vibrant community of students and staff. This year promises new
                 opportunities for growth, learning, success and excellence!
               </p>
-              <span className="px-5">
+              <span className="px-5 text-xs">
                 <CalendarMonthIcon /> - September 2024
               </span>
             </div>
@@ -33,15 +33,15 @@ const Events = () => {
                 src="https://res.cloudinary.com/thirtythree/image/upload/v1726738006/anniversary_tbn5sc.png"
                 alt="School resumption"
               />
-              <h1 className="text-2xl text-black px-5">
+              <h1 className="font-bold text-black px-5">
                 17th year anniversary
               </h1>
-              <p className="px-5">
+              <p className="px-5 text-sm">
                 🎉Celebrating 17 Years of Excellence at VICMOB HIGH SCHOOL!🎉
                 For 17 incredible years, we've been shaping bright minds,
                 fostering growth, and building a legacy of academic success.
               </p>
-              <span className="px-5">
+              <span className="px-5 text-xs">
                 <CalendarMonthIcon /> - September 2024
               </span>
             </div>
@@ -56,13 +56,13 @@ const Events = () => {
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726737627/resumption_s5aghc.jpg"
               alt="School resumption"
             />
-            <h1 className="text-2xl text-black px-5">School resumption</h1>
-            <p className="px-5">
+            <h1 className="font-bold text-black px-5">School resumption</h1>
+            <p className="px-5 text-sm">
               As we embark on another academic year, we welcome back our vibrant
               community of students and staff. This year promises new
               opportunities for growth, learning, success and excellence!
             </p>
-            <span className="px-5">
+            <span className="px-5 text-xs">
               <CalendarMonthIcon /> - September 2024
             </span>
           </div>
@@ -73,13 +73,13 @@ const Events = () => {
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726738006/anniversary_tbn5sc.png"
               alt="School resumption"
             />
-            <h1 className="text-2xl text-black px-5">17th year anniversary</h1>
-            <p className="px-5">
+            <h1 className="font-bold text-black px-5">17th year anniversary</h1>
+            <p className="px-5 text-sm">
               🎉Celebrating 17 Years of Excellence at VICMOB HIGH SCHOOL!🎉 For
               17 incredible years, we've been shaping bright minds, fostering
               growth, and building a legacy of academic success.
             </p>
-            <span className="px-5">
+            <span className="px-5 text-xs">
               <CalendarMonthIcon /> - September 2024
             </span>
           </div>
