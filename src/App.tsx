@@ -29,7 +29,7 @@ const App = () => {
             alt="vicmob-logo"
             className="w-[100px] h-[100px] rounded-full spinner"
           />
-          <h1 className="font-bold text-blue-900 text-xl">VICMOB SCHOOLS</h1>
+          <h1 className="font-bold text-orange-900 text-xl">VICMOB SCHOOLS</h1>
         </div>
       ) : (
         <div>

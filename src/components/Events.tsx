@@ -1,4 +1,4 @@
-import { Banner, Button, Carousel, Label, TextInput } from "flowbite-react";
+import { Carousel } from "flowbite-react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 const Events = () => {
@@ -50,7 +50,7 @@ const Events = () => {
 
         {/* Flex layout for desktop and larger screens */}
         <div className="hidden lg:flex justify-center items-center space-x-5 px-10 py-12">
-          <div className="border-orange-800 flex flex-col space-y-3 border-4 pb-4">
+          <div className="border-blue-900 flex flex-col space-y-3 border-4 pb-4">
             <img
               className="h-[300px] w-full object-cover"
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726737627/resumption_s5aghc.jpg"
@@ -67,7 +67,7 @@ const Events = () => {
             </span>
           </div>
 
-          <div className="border-orange-800 flex flex-col space-y-3 border-4 pb-4">
+          <div className="border-blue-900 flex flex-col space-y-3 border-4 pb-4">
             <img
               className="h-[300px] w-full object-cover"
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726738006/anniversary_tbn5sc.png"
@@ -85,35 +85,6 @@ const Events = () => {
           </div>
         </div>
       </div>
-
-      {/* newsletter */}
-      <Banner>
-        <div className="flex w-full items-center justify-between py-20 border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-          <div className="mx-auto flex w-full shrink-0 items-center sm:w-auto">
-            <form
-              action="#"
-              className="flex w-full flex-col items-center md:flex-row md:gap-x-3"
-            >
-              <Label
-                htmlFor="email"
-                className="mb-2 mr-auto shrink-0 font-bold text-xl text-black md:m-0 md:mb-0"
-              >
-                Sign up for our newsletter
-              </Label>
-              <TextInput
-                className="w-full"
-                id="email"
-                placeholder="Enter your email"
-                required
-                type="email"
-              />
-              <Button type="submit" className="mt-5 md:mt-0">
-                Subscribe
-              </Button>
-            </form>
-          </div>
-        </div>
-      </Banner>
     </div>
   );
 };
