@@ -73,7 +73,7 @@ const About = () => {
             alt="values"
           />
         </div>
-        <div className="flex flex-col bg-gray-200 shadow-xl p-5 rounded-xl space-y-3 md:w-1/2 2xl:w-[700px]">
+        <div className="flex flex-col bg-gray-100 border border-black shadow-xl p-5 rounded-xl space-y-3 md:w-1/2 2xl:w-[700px]">
           <div>
             <h1 className=" font-bold italic">Vision statement</h1>
             <p className="text-sm">
