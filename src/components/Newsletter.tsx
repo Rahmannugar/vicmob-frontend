@@ -15,7 +15,7 @@ const Newsletter = () => {
           <input
             type="email"
             id="email"
-            className="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg "
+            className="bg-gray-50 border w-full border-gray-300 text-black text-sm rounded-lg "
             placeholder="name@email.com"
             required
           />
