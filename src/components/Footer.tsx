@@ -1,6 +1,5 @@
 import {
   Footer as FlowbiteFooter,
-  FooterBrand,
   FooterCopyright,
   FooterDivider,
   FooterLink,
@@ -12,7 +11,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <FlowbiteFooter container className="bg-black">
+      <FlowbiteFooter container className="bg-black rounded-none w-screen">
         <div className="w-full text-white">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
             <div className="flex items-center py-7">

@@ -1,21 +1,25 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Admission from "./components/Admission";
-import Carousel from "./components/Carousel";
-import Events from "./components/Events";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Schools from "./components/Schools";
-import Welcome from "./components/Welcome";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Curriculum from "./pages/Curriculum";
+import Admissions from "./pages/Admissions";
+
 
 const App = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
-      <Carousel />
-      <Admission />
-      <Welcome />
-      <Schools />
-      <Events />
+      <Routes>
+        <Route element={<Home />} path="/" />
+        <Route element={<Contact />} path="/contact" />
+        <Route element={<About />} path="/about" />
+        <Route element={<Curriculum />} path="/curriculum" />
+        <Route element={<Admissions />} path="/admissions" />
+      </Routes>
       <Footer />
     </div>
   );
