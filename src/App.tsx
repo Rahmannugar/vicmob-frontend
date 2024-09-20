@@ -49,10 +49,10 @@ const App = () => {
 
           {/* bottom navigation */}
           <div
-            className={` fixed border-black border bg-blue-900 bottom-0 left-0 md:hidden z-50 w-full h-20 py-5`}
+            className={` fixed mb-[-5px] bg-blue-900 bottom-0 left-0 md:hidden z-50 w-full h-20 py-5`}
           >
             <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-              <a href="/admissions" className="px-5">
+              <a href="/admissions" className="px-5  border-r">
                 <button
                   type="button"
                   className="inline-flex flex-col items-center justify-center group"
@@ -64,7 +64,7 @@ const App = () => {
                 </button>
               </a>
 
-              <a href="/curriculum" className="px-5">
+              <a href="/curriculum" className="px-3 border-r">
                 <button
                   type="button"
                   className="inline-flex flex-col items-center justify-center group"
@@ -78,7 +78,7 @@ const App = () => {
                 </button>
               </a>
 
-              <a href="/contact" className="px-5">
+              <a href="/contact" className="px-5 border-r">
                 <button
                   type="button"
                   className="inline-flex flex-col items-center justify-center group"
