@@ -49,7 +49,7 @@ const App = () => {
 
           {/* bottom navigation */}
           <div
-            className={` fixed bg-blue-900 bottom-0 left-0 md:hidden z-50 w-full h-20 py-5`}
+            className={` fixed border-black border bg-blue-900 bottom-0 left-0 md:hidden z-50 w-full h-20 py-5`}
           >
             <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
               <a href="/admission" className="px-5">
@@ -60,7 +60,7 @@ const App = () => {
                   <div className="text-white">
                     <SchoolIcon />
                   </div>
-                  <span className="text-sm text-white">Admission</span>
+                  <span className="text-xs text-white">Admission</span>
                 </button>
               </a>
 
@@ -74,7 +74,7 @@ const App = () => {
                       <MenuBookIcon />
                     </div>
                   </div>
-                  <span className="text-sm text-white">Curriculum</span>
+                  <span className="text-xs text-white">Curriculum</span>
                 </button>
               </a>
 
@@ -86,7 +86,7 @@ const App = () => {
                   <div className="text-white">
                     <PermContactCalendarIcon />
                   </div>
-                  <span className="text-sm text-white">Contact</span>
+                  <span className="text-xs text-white">Contact</span>
                 </button>
               </a>
 
@@ -98,7 +98,7 @@ const App = () => {
                   <div className="text-white">
                     <InfoIcon />
                   </div>
-                  <span className="text-sm text-white">About</span>
+                  <span className="text-xs text-white">About</span>
                 </button>
               </a>
             </div>

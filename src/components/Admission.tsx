@@ -2,7 +2,7 @@ const Admission = () => {
   return (
     <div className="py-5 flex justify-center items-center px-3">
       <div className="bg-blue-950 duration-300 shadow-xl text-white h-[300px] px-5 rounded-xl py-7">
-        <h1 className="font-bold">Apply for Admission</h1>
+        <h1 className="font-bold text-lg">Apply for Admission</h1>
         <p className="mt-5 text-sm">
           Admission into Vicmob schools for 2024/2025 Academic session is in
           progress.

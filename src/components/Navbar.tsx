@@ -8,7 +8,7 @@ const Navbar = () => {
             alt="vicmob-logo"
             className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] rounded-full"
           />
-          <h1 className="text-white font-bold">VICMOB SCHOOLS</h1>
+          <h1 className="text-white text-lg font-bold">VICMOB SCHOOLS</h1>
         </a>
 
         {/* desktop navbar */}

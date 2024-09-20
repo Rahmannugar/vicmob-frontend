@@ -2,7 +2,7 @@ const Welcome = () => {
   return (
     <div>
       <div className="py-5 px-5">
-        <h1 className=" text-center text-blue-900 font-black">
+        <h1 className="text-lg text-center text-blue-900 font-black">
           Welcome Address
         </h1>
         <div className="bg-blue-900 h-0.5 flex justify-center items-center mt-1"></div>
@@ -14,7 +14,7 @@ const Welcome = () => {
               src="https://res.cloudinary.com/thirtythree/image/upload/v1726672771/governors_foqct3.png"
               alt="governors"
             />
-            <h1 className="text-center text-blue-900 font-bold">
+            <h1 className="text-center text-lg text-blue-900 font-bold">
               Board of Governors
             </h1>
           </div>
