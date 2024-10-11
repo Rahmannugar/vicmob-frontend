@@ -15,6 +15,8 @@ const Carousel = () => {
   const [dragging, setDragging] = useState(false);
   const dragX = useMotionValue(0);
 
+  console.log(dragging);
+
   const dragBuffer = 50;
 
   useEffect(() => {
@@ -87,6 +89,8 @@ const Carousel = () => {
           </p>
         </div>
       </div>
+
+      <div></div>
     </div>
   );
 };

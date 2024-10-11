@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Schools = () => {
   return (
     <div>
-      <h1 className="text-center text-lg bg-blue-200 font-black mt-10 text-black py-5">
+      <h1 className="text-center text-lg bg-blue-900 font-black mt-10 text-white py-5">
         <SchoolIcon fontSize="medium" /> Vicmob Schools
       </h1>
 
