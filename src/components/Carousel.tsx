@@ -1,6 +1,6 @@
-import Typewriter from "typewriter-effect";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, useMotionValue } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 const Carousel = () => {
   const images = [
@@ -11,12 +11,19 @@ const Carousel = () => {
     "https://res.cloudinary.com/thirtythree/image/upload/v1728618598/IMG-20240628-WA0005_hxgh76.jpg",
   ];
 
-  const [imgIndex, setImgIndex] = useState(1);
+  const [imgIndex, setImgIndex] = useState(0); // Start at the first image
   const [dragging, setDragging] = useState(false);
+  const dragX = useMotionValue(0);
 
   const dragBuffer = 50;
 
-  const dragX = useMotionValue(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImgIndex((prev) => (prev + 1) % images.length); // Cycle through images
+    }, 3000); // Move every 3 seconds
+
+    return () => clearInterval(interval); // Clear the interval on component unmount
+  }, [images.length]);
 
   const onDragStart = () => {
     setDragging(true);
