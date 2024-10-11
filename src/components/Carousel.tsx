@@ -22,7 +22,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setImgIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -90,7 +90,18 @@ const Carousel = () => {
         </div>
       </div>
 
-      <div></div>
+      <motion.div
+        className="bg-blue-950 h-[30px] absolute bottom-0"
+        animate={{
+          width: ["0%", "100%"],
+        }}
+        transition={{
+          duration: 5,
+          ease: "linear",
+          repeat: Infinity,
+          repeatType: "loop",
+        }}
+      />
     </div>
   );
 };
