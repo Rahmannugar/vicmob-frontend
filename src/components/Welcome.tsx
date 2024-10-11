@@ -12,13 +12,19 @@ const Welcome = () => {
         <div className="lg:flex justify-center items-center">
           <div className="flex flex-col">
             <img
-              className="lg:w-[500px] object-cover lg:h-[500px] mt-5"
-              src="https://res.cloudinary.com/thirtythree/image/upload/v1728645109/director_agz3vg.png"
+              className="lg:w-[350px] h-[380px] object-cover lg:h-[400px] mt-5"
+              src="https://res.cloudinary.com/thirtythree/image/upload/v1728655859/director-rescaled_ggponn.jpg"
               alt="governors"
             />
-            <h1 className="text-center mt-[-5px] lg:mt-5 text-blue-900 font-bold">
-              DIRECTOR
-            </h1>
+
+            <div className="py-3 bg-blue-900">
+              <h1 className="text-center mt-1 text-white font-bold">
+                FOLARIN MODUPE VICTORIA
+              </h1>
+              <h1 className="text-center mt-1 text-white font-bold">
+                EXECUTIVE DIRECTOR, VICMOB SCHOOLS
+              </h1>
+            </div>
           </div>
 
           <div className="lg:px-5 mt-3 lg:mt-0 lg:w-1/2 text-justify">
