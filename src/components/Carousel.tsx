@@ -42,6 +42,8 @@ const Carousel = () => {
     }
   };
 
+  console.log(onDragStart, onDragEnd);
+
   return (
     <div className="relative overflow-hidden">
       <div className="relative">

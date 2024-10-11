@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 
 const Welcome = () => {
+  const governors = [
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728655858/governor-5_oi3l45.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728655859/governor-2_h7lmob.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728655859/director-rescaled_ggponn.jpg",
+  ];
+  console.log(governors);
   return (
     <div>
       <div className="py-5 px-5">
