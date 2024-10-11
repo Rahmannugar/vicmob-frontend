@@ -126,7 +126,7 @@ const Welcome = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center mt-10 space-y-3 lg:mt-0 items-center">
+        <div className="flex flex-col justify-center mt-5 space-y-3 lg:mt-0 items-center">
           <iframe
             className="w-[100%] mt-9"
             width="360"
@@ -142,7 +142,7 @@ const Welcome = () => {
             whileHover={{
               backgroundColor: "rosybrown",
             }}
-            className="py-3 bg-blue-900  w-[100%] rounded-md text-white"
+            className="py-3 bg-blue-900 w-[100%] rounded-md text-white"
           >
             TAKE A TOUR
           </motion.button>
