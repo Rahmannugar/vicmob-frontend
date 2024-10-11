@@ -1,12 +1,46 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Welcome = () => {
   const governors = [
-    "https://res.cloudinary.com/thirtythree/image/upload/v1728655858/governor-5_oi3l45.jpg",
-    "https://res.cloudinary.com/thirtythree/image/upload/v1728655859/governor-2_h7lmob.jpg",
-    "https://res.cloudinary.com/thirtythree/image/upload/v1728655859/director-rescaled_ggponn.jpg",
+    {
+      img: "https://res.cloudinary.com/thirtythree/image/upload/v1728655858/governor-5_oi3l45.jpg",
+      name: "PST. OGUNSEYE OLUKUNLE DAVID",
+    },
+    {
+      img: "https://res.cloudinary.com/thirtythree/image/upload/v1728655859/governor-2_h7lmob.jpg",
+      name: "PRINCESS OGUNSEYE ADEOLA",
+    },
+    {
+      img: "https://res.cloudinary.com/thirtythree/image/upload/v1728655859/director-rescaled_ggponn.jpg",
+      name: "FOLARIN MODUPE VICTORIA",
+    },
+    {
+      img: "https://res.cloudinary.com/thirtythree/image/upload/v1728655858/governor-1_jyu935.jpg",
+      name: "REV. OLADIPO",
+    },
+    {
+      img: "https://res.cloudinary.com/thirtythree/image/upload/v1728655858/governor-4_ilm8ni.jpg",
+      name: "FOLARIN TAIWO OMOTAYO",
+    },
+    {
+      img: "https://res.cloudinary.com/thirtythree/image/upload/v1728655858/governor-3_liapk5.jpg",
+      name: "IYARE JOSHUA OLUWAGBEMIGA",
+    },
   ];
-  console.log(governors);
+
+  const [currentGovernorIndex, setCurrentGovernorIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentGovernorIndex(
+        (prevIndex) => (prevIndex + 1) % governors.length
+      );
+    }, 3000); // Changes every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [governors.length]);
+
   return (
     <div>
       <div className="py-5 px-5">
@@ -62,22 +96,41 @@ const Welcome = () => {
         </div>
       </div>
 
-      <div className="lg:flex justify-center lg:space-x-12 items-center">
+      <div className="md:flex justify-center mt-10 px-5 md:space-x-12 items-center">
         <div>
-          <img
-            className="lg:w-[500px] object-cover lg:h-[500px]"
-            src="https://res.cloudinary.com/thirtythree/image/upload/v1726672771/governors_foqct3.png"
-            alt=""
-          />
-          <h1 className=" text-lg text-center text-blue-900 font-bold">
+          <h1 className="text-lg text-center text-blue-900 font-bold">
             BOARD OF GOVERNORS
           </h1>
+          <div className="relative w-full md:w-[350px] lg:w-[400px] h-[450px] flex justify-center mt-5 items-center overflow-hidden">
+            {governors.map((governor, index) => (
+              <motion.div
+                key={index}
+                className="flex flex-col items-center justify-center absolute w-full h-full"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: currentGovernorIndex === index ? 1 : 0 }}
+                transition={{ duration: 1 }}
+                style={{
+                  display: currentGovernorIndex === index ? "block" : "none",
+                }}
+              >
+                <img
+                  className="w-full h-full object-cover rounded-lg"
+                  src={governor.img}
+                  alt={governor.name}
+                />
+                <h1 className="absolute bottom-0 text-center text-white bg-blue-950 w-full py-3 font-bold">
+                  {governor.name}
+                </h1>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col justify-center mt-10 space-y-3 lg:mt-0 items-center">
           <iframe
+            className="w-[100%] mt-9"
             width="360"
-            height="315"
+            height="350"
             src="https://www.youtube.com/embed/WyrHuafejik?si=zu3BiJEGOG_84b4A"
             title="YouTube video player"
             frameBorder="0"
@@ -89,13 +142,14 @@ const Welcome = () => {
             whileHover={{
               backgroundColor: "rosybrown",
             }}
-            className="py-3 bg-blue-900 w-[360px] rounded-md text-white"
+            className="py-3 bg-blue-900  w-[100%] rounded-md text-white"
           >
-            Take a tour
+            TAKE A TOUR
           </motion.button>
         </div>
       </div>
     </div>
   );
 };
+
 export default Welcome;
