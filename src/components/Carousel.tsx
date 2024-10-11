@@ -12,12 +12,6 @@ const Carousel = () => {
   ];
 
   const [imgIndex, setImgIndex] = useState(0);
-  const [dragging, setDragging] = useState(false);
-  const dragX = useMotionValue(0);
-
-  console.log(dragging);
-
-  const dragBuffer = 50;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,23 +20,6 @@ const Carousel = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
-
-  const onDragStart = () => {
-    setDragging(true);
-  };
-
-  const onDragEnd = () => {
-    setDragging(false);
-
-    const x = dragX.get();
-    if (x <= dragBuffer && imgIndex < images.length - 1) {
-      setImgIndex((prev) => prev + 1);
-    } else if (x >= dragBuffer && imgIndex > 0) {
-      setImgIndex((prev) => prev - 1);
-    }
-  };
-
-  console.log(onDragStart, onDragEnd);
 
   return (
     <div className="relative overflow-hidden">
