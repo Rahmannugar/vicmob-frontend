@@ -1,19 +1,57 @@
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
+import { motion, useMotionValue } from "framer-motion";
 
 const Carousel = () => {
   const images = [
-    "https://res.cloudinary.com/thirtythree/image/upload/v1726476546/vicmob-1_cwnkls.jpg",
-    "https://res.cloudinary.com/thirtythree/image/upload/v1726476547/vicmob-2_lb2uy9.jpg",
-    "https://res.cloudinary.com/thirtythree/image/upload/v1726529414/vicmob-3_bjoejg.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728618597/photo_5785276873213854742_y_fcrwxs.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728618597/photo_5785276873213854739_y_ovbpik.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728618612/IMG-20240706-WA0014_x3hruh.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728618600/IMG-20240706-WA0012_vvg45c.jpg",
+    "https://res.cloudinary.com/thirtythree/image/upload/v1728618598/IMG-20240628-WA0005_hxgh76.jpg",
   ];
+
+  const [imgIndex, setImgIndex] = useState(1);
+  const [dragging, setDragging] = useState(false);
+
+  const dragBuffer = 50;
+
+  const dragX = useMotionValue(0);
+
+  const onDragStart = () => {
+    setDragging(true);
+  };
+
+  const onDragEnd = () => {
+    setDragging(false);
+
+    const x = dragX.get();
+    if (x <= dragBuffer && imgIndex < images.length - 1) {
+      setImgIndex((prev) => prev + 1);
+    } else if (x >= dragBuffer && imgIndex > 0) {
+      setImgIndex((prev) => prev - 1);
+    }
+  };
 
   return (
     <div className="relative overflow-hidden">
       <div className="relative">
-        <div className="flex items-center cursor-grab active:cursor-grabbing">
+        <motion.div
+          drag="x"
+          dragConstraints={{
+            left: 0,
+            right: 0,
+          }}
+          onDragStart={onDragStart}
+          style={{
+            x: dragX,
+          }}
+          onDragEnd={onDragEnd}
+          animate={{
+            translateX: `-${imgIndex * 100}%`,
+          }}
+          className="flex items-center cursor-grab active:cursor-grabbing"
+        >
           {images.map((img, index) => (
             <div
               key={index}
@@ -22,10 +60,10 @@ const Carousel = () => {
                 backgroundSize: `cover`,
                 backgroundPosition: "center",
               }}
-              className="aspect-video h-screen w-screen"
+              className="aspect-video shrink-0 w-screen h-[400px] lg:h-[50%] object-cover"
             ></div>
           ))}
-        </div>
+        </motion.div>
 
         <div className="absolute z-10 top-28 left-[3%]">
           <p className="bg-blue-950 text-sm font-bold text-white w-[30vw] min-w-[200px] p-3">

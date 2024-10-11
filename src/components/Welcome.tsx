@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Welcome = () => {
   return (
     <div>
@@ -10,12 +12,12 @@ const Welcome = () => {
         <div className="lg:flex justify-center items-center">
           <div className="flex flex-col">
             <img
-              className="lg:w-[500px] object-cover lg:h-[500px]"
-              src="https://res.cloudinary.com/thirtythree/image/upload/v1726672771/governors_foqct3.png"
+              className="lg:w-[500px] object-cover lg:h-[500px] mt-5"
+              src="https://res.cloudinary.com/thirtythree/image/upload/v1728645109/director_agz3vg.png"
               alt="governors"
             />
-            <h1 className="text-center text-lg text-blue-900 font-bold">
-              Board of Governors
+            <h1 className="text-center mt-[-5px] lg:mt-5 text-blue-900 font-bold">
+              DIRECTOR
             </h1>
           </div>
 
@@ -45,6 +47,40 @@ const Welcome = () => {
               </a>
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="lg:flex justify-center lg:space-x-12 items-center">
+        <div>
+          <img
+            className="lg:w-[500px] object-cover lg:h-[500px]"
+            src="https://res.cloudinary.com/thirtythree/image/upload/v1726672771/governors_foqct3.png"
+            alt=""
+          />
+          <h1 className=" text-lg text-center text-blue-900 font-bold">
+            BOARD OF GOVERNORS
+          </h1>
+        </div>
+
+        <div className="flex flex-col justify-center mt-10 space-y-3 lg:mt-0 items-center">
+          <iframe
+            width="360"
+            height="315"
+            src="https://www.youtube.com/embed/WyrHuafejik?si=zu3BiJEGOG_84b4A"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+          <motion.button
+            whileHover={{
+              backgroundColor: "rosybrown",
+            }}
+            className="py-3 bg-blue-900 w-[360px] rounded-md text-white"
+          >
+            Take a tour
+          </motion.button>
         </div>
       </div>
     </div>
