@@ -46,20 +46,10 @@ const Carousel = () => {
     <div className="relative overflow-hidden">
       <div className="relative">
         <motion.div
-          drag="x"
-          dragConstraints={{
-            left: 0,
-            right: 0,
-          }}
-          onDragStart={onDragStart}
-          style={{
-            x: dragX,
-          }}
-          onDragEnd={onDragEnd}
           animate={{
             translateX: `-${imgIndex * 100}%`,
           }}
-          className="flex items-center cursor-grab active:cursor-grabbing"
+          className="flex items-center"
         >
           {images.map((img, index) => (
             <div
