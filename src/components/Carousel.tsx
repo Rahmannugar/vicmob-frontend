@@ -11,7 +11,7 @@ const Carousel = () => {
     "https://res.cloudinary.com/thirtythree/image/upload/v1728618598/IMG-20240628-WA0005_hxgh76.jpg",
   ];
 
-  const [imgIndex, setImgIndex] = useState(0); // Start at the first image
+  const [imgIndex, setImgIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
   const dragX = useMotionValue(0);
 
@@ -21,10 +21,10 @@ const Carousel = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setImgIndex((prev) => (prev + 1) % images.length); // Cycle through images
-    }, 3000); // Move every 3 seconds
+      setImgIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
 
-    return () => clearInterval(interval); // Clear the interval on component unmount
+    return () => clearInterval(interval);
   }, [images.length]);
 
   const onDragStart = () => {
